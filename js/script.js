@@ -46,6 +46,39 @@ contactForm.addEventListener("submit", (event) => {
   // Reset the form fields
   contactForm.reset();
 });
+// ================= PROJECT SEARCH FILTER =================
 
+const searchInput = document.getElementById("searchInput");
+
+const projectCards = document.querySelectorAll(".project-card");
+
+const noResultsMessage = document.getElementById("noResultsMessage");
+
+searchInput.addEventListener("input", () => {
+
+    const searchText = searchInput.value.toLowerCase();
+
+    let visibleCount = 0;
+
+    projectCards.forEach(card => {
+
+        const text = card.textContent.toLowerCase();
+
+        if (text.includes(searchText)) {
+            card.style.display = "block";
+            visibleCount++;
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+    if (visibleCount === 0) {
+        noResultsMessage.style.display = "block";
+    } else {
+        noResultsMessage.style.display = "none";
+    }
+
+});
 
 
