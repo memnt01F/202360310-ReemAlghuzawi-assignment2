@@ -54,7 +54,11 @@ const projectCards = document.querySelectorAll(".project-card");
 
 const noResultsMessage = document.getElementById("noResultsMessage");
 
+const loadingMessage = document.getElementById("loadingMessage");
+
 searchInput.addEventListener("input", () => {
+    
+  loadingMessage.style.display = "block";
 
     const searchText = searchInput.value.toLowerCase();
 
@@ -78,6 +82,8 @@ searchInput.addEventListener("input", () => {
     } else {
         noResultsMessage.style.display = "none";
     }
+    
+    loadingMessage.style.display = "none";
 
 });
 
