@@ -76,20 +76,21 @@ Examples:
 
 ## Project Structure
 
+```
 assignment-2/
-
-│── index.html
-
-│── css/
-│ └── styles.css
-│── js/
-│ └── script.js
-│── assets/
-│ └── images/
-│── docs/
-│ ├── ai-usage-report.md
-│ └── technical-documentation.md
-│── README.md
+├── README.md
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── script.js
+├── assets/
+│   └── images/
+├── docs/
+│   ├── ai-usage-report.md
+│   └── technical-documentation.md
+└── .gitignore
+```
 
 
 ---
