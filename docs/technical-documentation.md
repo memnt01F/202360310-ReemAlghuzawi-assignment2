@@ -141,37 +141,6 @@ Responsive behavior includes:
 - Consistent spacing across devices
 
 Example breakpoint:
-
-These animations provide visual feedback and make the interface feel more responsive and modern.
-
----
-
-## 7. Theme Persistence (Local Storage)
-
-The application stores the user's theme preference using `localStorage`.
-
-Behavior:
-
-1. The user toggles between light and dark mode.
-2. The selected theme is saved in local storage.
-3. When the page reloads, the saved theme is automatically applied.
-
-This improves user experience by maintaining preferences across sessions.
-
----
-
-## 8. Responsive Design
-
-The layout adapts to different screen sizes using CSS Grid, Flexbox, and media queries.
-
-Responsive behavior includes:
-
-- Two-column project layout on larger screens
-- Single-column layout on smaller screens
-- Flexible navigation alignment
-- Consistent spacing across devices
-
-Example breakpoint:
 @media (max-width: 850px)
 
 
