@@ -77,7 +77,9 @@ Examples:
 ## Project Structure
 
 assignment-2/
+
 │── index.html
+
 │── css/
 │ └── styles.css
 │── js/
